@@ -23,7 +23,7 @@ module.exports = function(grunt) {
                 },
 
                 files: {
-                    'public/assets/css/main.css':              ['_styl/main.styl']
+                    'public/assets/css/main.css': ['_styl/main.styl']
                 }
             }
         },

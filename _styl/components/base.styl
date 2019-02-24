@@ -1,23 +1,32 @@
 /*--------------------------------------------------------------------
-* $BASE - For Home and Others
+* $BASE
 --------------------------------------------------------------------*/
 
 *, *:before, *:after
   box-sizing: border-box
 
 ::selection
-  background: cyan
-  color: black
+  background: $black
+  color: white
 
 img
   max-width: 100%
 
 body
-  font-family: $font-family-proxima
+  padding: 20px
+  font-family: $font-family-tisa
   font-weight: $font-weight-light
   font-size: 112.5%
-  line-height: 1.4
+  line-height: 1.5
+  background-color: $green
   color: black
 
 a
   text-decoration: none
+
+.container
+  max-width: 1200px
+  margin: 0 auto
+
+.center
+  text-align: center

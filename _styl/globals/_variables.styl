@@ -3,15 +3,11 @@
 --------------------------------------------------------------------*/
 
 // Font Families
-$font-family-proxima = 'proxima-nova', Helvetica, Arial, sans-serif
-$font-family-georgia = Georgia, Times, serif
-$font-family-helvetica = 'Helvetica Neue', Helvetica, Arial, sans-serif
+$font-family-tisa = 'ff-tisa-web-pro', Georgia, serif
+$font-family-brandon = 'brandon-grotesque', Helvetica, sans-serif
 
 // Font Weights
 $font-weight-light = 300
-$font-weight-regular = 400
-$font-weight-medium = 500
-$font-weight-semibold = 600
 $font-weight-bold = 700
 
 // Mixins
@@ -44,12 +40,18 @@ white(alpha)
 black(alpha)
   rgba(0,0,0,alpha)
 
-gold(alpha)
-  rgba(255,215,0,alpha)
 
-$red = rgb(228,92,76)
+$black = rgb(0,0,0)
+$green = rgb(48,165,101)
 
 $grey-drk = #444
 $grey-med = #888
 $grey-light = #ccc
 $grey-lightest = #ddd
+
+
+// Borders
+
+$dashed = 1px dashed $green
+$solid = 1px solid $green
+$dotted = 1px dotted $green

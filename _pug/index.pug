@@ -2,8 +2,27 @@ extends layout
 
 block vars
   - var pageDescription = 'The Food Place is a modern eatery for this life and after.'
-  - var bodyClass = 'menu'
+  - var bodyClass = 'landing'
+
+block title
+  | The Food Place
 
 block content
 
-  p hi
+  #food
+
+    .menu
+
+      include includes/_intro
+
+      include includes/_hors-doeuvres
+
+      include includes/_soups
+
+      include includes/_shrimp
+
+      include includes/_brunch
+
+      include includes/_snacks
+
+      include includes/_entrees

@@ -1,0 +1,57 @@
+/*--------------------------------------------------------------------
+* $MENU
+--------------------------------------------------------------------*/
+
+.menu
+  padding: 30px
+  background: white
+  columns: 380px
+  column-gap: 50px
+
+  section
+    margin-bottom: 50px
+
+  & > *
+    break-inside: avoid-column
+    margin-bottom: 40px
+
+  h2, h3
+    color: $green
+    text-align: center
+
+  h3
+    padding-bottom: 10px
+    text-transform: uppercase
+    border-bottom: $dashed
+
+  @import 'callouts'
+
+  .name,
+  .episode
+    font-family: $font-family-brandon
+
+  .name
+    font-size: 1em
+
+  .description,
+  .episode
+    font-size: .8em
+
+  .description > ul
+    margin: 15px
+
+  .menu-item
+    display: grid
+    grid-template-columns: b(item) auto b(episode) 100px
+    
+    &:not(:last-child)
+      margin-bottom: 15px
+
+    .name,
+    .description
+      grid-column: item
+
+    .episode
+      grid-column: episode
+      align-self: start
+      justify-self: end

@@ -1,0 +1,71 @@
+/*--------------------------------------------------------------------
+* $CALLOUT STYLES
+--------------------------------------------------------------------*/
+
+.callout
+  padding: 7%
+  position: relative
+
+  &:not(section) 
+    margin-top: 50px
+  
+  &:not(:last-child)
+    margin-bottom: 40px
+
+  .illo
+    position: absolute
+    left: 50%
+    top: 0
+    transform: translate(-50%,-50%)
+
+  h4
+    text-align: center
+
+  // dotted top and bottom borders
+  &.callout-style-1
+    padding: 5% 0 0
+    border-top: $dotted
+    border-bottom: $dotted
+
+    &:last-child
+      border-bottom: none
+
+  // offset solid and dotted borders
+  &.callout-style-2
+    margin-left: 11px
+    padding-right: 9%
+    border: $dashed
+    box-shadow: inset -10px -10px 0 white,
+                inset -11px -11px 0 $green,
+                -11px -11px 0 -1px white,
+                -11px -11px 0 $green
+
+  // nested solid and dashed borders
+  &.callout-style-3
+    border: $dashed
+    box-shadow: inset 0 0 0 10px white,
+                inset 0 0 0 11px $green
+
+  // solid border
+  &.callout-style-4
+    padding: 5%
+    border: $solid
+
+  // nested solid and dotted borders
+  &.callout-style-5
+    border: $dotted
+    box-shadow: inset 0 0 0 10px white,
+                inset 0 0 0 11px $green
+
+  .menu-list
+    margin-bottom: 0
+
+  &.center
+    .menu-item,
+    .name,
+    .description,
+    .episode
+      display: block
+
+    .episode
+      margin-top: 15px

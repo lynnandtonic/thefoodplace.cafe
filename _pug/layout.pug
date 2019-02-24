@@ -18,7 +18,7 @@ html(lang='en')
 
     link(rel='shortcut icon', href='/assets/images/burger-icon.png')
 
-    link(rel='stylesheet', href='https://use.typekit.net/ebm6qdq.css')
+    link(rel='stylesheet', href='https://use.typekit.net/snm1pqg.css')
 
     link(rel='stylesheet', href='/assets/css/main.css')
 
@@ -26,6 +26,20 @@ html(lang='en')
 
   body(class=bodyClass)
 
-    block content
+    .container
+
+      nav.nav-main
+        a(href='') Food
+        a(href='') Beverages
+        a(href='') Hours & Location
+        a(href='') Partners
+        a.recommend(href='') Recommend
+
+      header.hero
+        h1 The Food Place
+        p A modern eatery for this life and after.
+        small &#9733; &#9733; &#9733;
+
+      block content
 
 

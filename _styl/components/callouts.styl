@@ -12,22 +12,36 @@
   &:not(:last-child)
     margin-bottom: 40px
 
+  :last-child
+    margin-bottom: 0
+
   .illo
-    position: absolute
-    left: 50%
-    top: 0
-    transform: translate(-50%,-50%)
+      position: absolute
+
+  &.img-top
+    .illo
+      left: 50%
+      top: 0
+      transform: translate(-55%,-50%)
+
+  &.img-left
+    padding-left: 150px !important
+    .illo
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
 
   h4
     text-align: center
 
   // dotted top and bottom borders
   &.callout-style-1
-    padding: 5% 0 0
+    padding: 5% 0
     border-top: $dotted
     border-bottom: $dotted
 
     &:last-child
+      padding-bottom: 0
       border-bottom: none
 
   // offset solid and dotted borders
@@ -56,16 +70,3 @@
     border: $dotted
     box-shadow: inset 0 0 0 10px white,
                 inset 0 0 0 11px $green
-
-  .menu-list
-    margin-bottom: 0
-
-  &.center
-    .menu-item,
-    .name,
-    .description,
-    .episode
-      display: block
-
-    .episode
-      margin-top: 15px

@@ -24,34 +24,6 @@
     text-transform: uppercase
     border-bottom: $dashed
 
-  @import 'callouts'
-
   .name,
   .episode
     font-family: $font-family-brandon
-
-  .name
-    font-size: 1em
-
-  .description,
-  .episode
-    font-size: .8em
-
-  .description > ul
-    margin: 15px
-
-  .menu-item
-    display: grid
-    grid-template-columns: b(item) auto b(episode) 100px
-    
-    &:not(:last-child)
-      margin-bottom: 15px
-
-    .name,
-    .description
-      grid-column: item
-
-    .episode
-      grid-column: episode
-      align-self: start
-      justify-self: end

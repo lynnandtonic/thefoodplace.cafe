@@ -8,7 +8,7 @@
 
   &:not(section) 
     margin-top: 50px
-  
+
   &:not(:last-child)
     margin-bottom: 40px
 
@@ -44,10 +44,15 @@
       padding-bottom: 0
       border-bottom: none
 
+    &.short
+      margin: 20px 0
+
   // offset solid and dotted borders
   &.callout-style-2
     margin-left: 11px
+    margin-top: 11px
     padding-right: 9%
+    padding-bottom: 9%
     border: $dashed
     box-shadow: inset -10px -10px 0 white,
                 inset -11px -11px 0 $green,

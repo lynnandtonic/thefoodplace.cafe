@@ -2,14 +2,26 @@
 * $VARIABLES
 --------------------------------------------------------------------*/
 
-// Font Families
-$font-family-tisa = 'ff-tisa-web-pro', Georgia, serif
-$font-family-brandon = 'brandon-grotesque', Helvetica, sans-serif
-
 // Font Weights
 $font-weight-light = 300
+$font-weight-regular = 400
 $font-weight-bold = 700
 
+// Font Families
+$font-tisa-light()
+  font-family: 'ff-tisa-web-pro', Georgia, serif
+  font-style: italic
+  font-weight: $font-weight-light
+
+$font-tisa-regular()
+  font-family: 'ff-tisa-web-pro', Georgia, serif
+  font-weight: $font-weight-regular
+  font-style: normal
+
+$font-brandon()
+  font-family: 'brandon-grotesque', Helvetica, sans-serif
+  font-weight: $font-weight-bold
+  font-style: normal
 // Mixins
 
 b(val) //b for bracket
@@ -40,6 +52,8 @@ white(alpha)
 black(alpha)
   rgba(0,0,0,alpha)
 
+green(alpha)
+  rgba(48,165,101,alpha)
 
 $black = rgb(0,0,0)
 $green = rgb(48,165,101)

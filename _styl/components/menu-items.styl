@@ -18,6 +18,10 @@
     align-self: start
     justify-self: end
 
+  .name,
+  .episode
+    $font-brandon()
+
   .name
     font-size: 1em
 
@@ -25,12 +29,16 @@
       margin-bottom: 20px
       font-size: 1.4em
 
+    .emoji
+      font-size: .8em
+
   .description,
   .episode
     font-size: .8em
 
   .description > ul
     margin: 15px
+    margin-left: 30px
 
   &.center
     display: block
@@ -42,3 +50,25 @@
 
     .episode
       margin-top: 15px
+
+.icon
+  position: relative
+
+  &:before
+    display: block
+    position: absolute
+    left: -20px
+    top: 0
+    font-style: normal
+    font-size: 14px
+
+  &.fire:before
+    content: '🔥'
+  &.shrimp:before
+    content: '🍤'
+  &.heart:before
+    content: '❤️'
+  &.potato:before
+    content: '🥔'
+  &.corn:before
+    content: '🌽'

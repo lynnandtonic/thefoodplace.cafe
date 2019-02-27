@@ -8,12 +8,24 @@
   columns: 380px
   column-gap: 50px
 
-  section
+  @media screen and (min-width: 880px)
+
+    .wide
+      column-span: all
+
+      .container
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-gap: 50px
+
+  & + .menu
+    margin-top: 20px
+
+  section:not(:last-child)
     margin-bottom: 50px
 
   & > *
     break-inside: avoid-column
-    margin-bottom: 40px
 
   h2, h3
     color: $green
@@ -23,7 +35,3 @@
     padding-bottom: 10px
     text-transform: uppercase
     border-bottom: $dashed
-
-  .name,
-  .episode
-    font-family: $font-family-brandon

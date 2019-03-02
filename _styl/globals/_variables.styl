@@ -22,27 +22,16 @@ $font-brandon()
   font-family: 'brandon-grotesque', Helvetica, sans-serif
   font-weight: $font-weight-bold
   font-style: normal
+
 // Mixins
 
 b(val) //b for bracket
   unquote("[") + val + unquote("]")
 
-highlight(hue)
-  font-weight: $font-weight-semibold
-  display: inline-block
-  background: hue
-  color: white
-
-underline(hue)
-  background: linear-gradient(to top, hue 35%, transparent 35%)
-
 // Grid
 
-grid-col-full()
-  grid-column: 1 / -1
-
-grid-row-full()
-  grid-row: 1 / -1
+$bp-medium = 880px
+$bp-small = 500px
 
 // Colors
 
@@ -58,11 +47,10 @@ green(alpha)
 $black = rgb(0,0,0)
 $green = rgb(48,165,101)
 
-$grey-drk = #444
+$grey-drk = #333
 $grey-med = #888
 $grey-light = #ccc
 $grey-lightest = #ddd
-
 
 // Borders
 

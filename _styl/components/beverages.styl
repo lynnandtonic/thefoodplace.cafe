@@ -1,0 +1,47 @@
+/*--------------------------------------------------------------------
+* $BEVERAGES MENU
+--------------------------------------------------------------------*/
+
+#cocktails
+  .menu-list
+    display: grid
+    grid-gap: 5px
+
+  @media screen and (min-width: $bp-medium + 1)
+    .menu-list
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-gap: 5px
+
+  .menu-item
+    margin-bottom: 0
+    border: 1px solid green(.4)
+    display: grid
+    grid-template-columns: b(illo) 100px b(details) 1fr
+    grid-column-gap: 0
+
+  .illo
+    min-height: 110px
+    border-right: 1px solid green(.4)
+    display: flex
+    align-items: center
+    justify-content: center
+
+  .details
+    padding: 15px 20px 20px
+    align-self: center
+
+  .episode
+    color: $green
+    
+    &:before
+      content: ' / '
+
+  .description
+    display: block
+
+#antimatter
+  margin-top: 100px
+  padding-top: 65px
+  .illo
+    transform: translate(-50%,-60%)

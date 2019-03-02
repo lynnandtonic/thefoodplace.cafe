@@ -3,13 +3,16 @@
     margin-top: 15px
 
 #froyo-list
-  padding: 30px
+  @media screen and (max-width: $bp-small)
+    padding: 15px
+  @media screen and (min-width: $bp-small + 1)
+    padding: 30px
 
 ul.froyo-flavors
   margin: 0
   font-size: .74em
   display: grid
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
   grid-gap: 5px
 
   li
@@ -21,7 +24,12 @@ ul.froyo-flavors
     $font-tisa-regular()
 
 #chidi-froyo
-  margin-top: 90px
   padding-top: 90px
   .illo
     transform: translate(-60%,-50%)
+
+  @media screen and (max-width: $bp-medium)
+    margin-top: 110px
+
+  @media screen and (min-width: $bp-medium + 1)
+    margin-top: 90px

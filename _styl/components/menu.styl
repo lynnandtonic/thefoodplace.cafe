@@ -3,29 +3,32 @@
 --------------------------------------------------------------------*/
 
 .menu
-  padding: 30px
   background: white
-  columns: 380px
-  column-gap: 50px
 
-  @media screen and (min-width: 880px)
+  @media screen and (max-width: $bp-small)
+    padding: 30px 15px
+
+  @media screen and (min-width: $bp-small + 1)
+    padding: 30px
+
+  @media screen and (min-width: $bp-medium + 1)
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-column-gap: 50px
 
     .wide
-      column-span: all
+      grid-column: 1 / -1
 
       .container
         display: grid
         grid-template-columns: 1fr 1fr
-        grid-gap: 50px
+        grid-column-gap: 50px
 
   & + .menu
     margin-top: 20px
 
-  section:not(:last-child)
+  section
     margin-bottom: 50px
-
-  & > *
-    break-inside: avoid-column
 
   h2, h3
     color: $green

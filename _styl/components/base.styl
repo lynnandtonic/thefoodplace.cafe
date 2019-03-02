@@ -13,15 +13,16 @@ img
   max-width: 100%
 
 body
-  padding: 20px
   $font-tisa-light()
   font-size: 112.5%
   line-height: 1.5
   background-color: $green
   color: black
 
-a
-  text-decoration: none
+  & > .container
+
+    @media screen and (min-width: $bp-small + 1)
+      padding: 0 20px
 
 .container
   max-width: 1200px
@@ -29,3 +30,6 @@ a
 
 .center
   text-align: center
+
+a
+  text-decoration: none

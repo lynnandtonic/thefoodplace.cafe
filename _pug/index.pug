@@ -9,33 +9,41 @@ block title
 
 block content
 
-  .menu#food
+  .container
+    .menu#food
 
-    include includes/_intro
+      .menu-group
+        include includes/_intro
+        include includes/_hors-doeuvres
+      .menu-group
+        include includes/_soups
+        include includes/_shrimp
+      .menu-group.wide
+        include includes/_brunch
+      .menu-group
+        include includes/_snacks
+        include includes/_shareables
+        include includes/_favorites
+      .menu-group
+        include includes/_entrees
+        include includes/_sides
 
-    include includes/_hors-doeuvres
+    .menu#beverages
 
-    include includes/_soups
+      .menu-group.wide
+        include includes/_bev-cocktails
+      .menu-group
+        include includes/_bev-wine
+        include includes/_bev-beer
+        include includes/_bev-energy
+      .menu-group
+        include includes/_bev-bottomless
 
-    include includes/_shrimp
+    .menu#dessert
 
-    include includes/_brunch
+      .menu-group.wide
+        include includes/_dessert
+      .menu-group.wide
+        include includes/_froyo
 
-    include includes/_snacks
-
-    include includes/_shareables
-
-    include includes/_favorites
-
-    include includes/_entrees
-
-    include includes/_sides
-
-  .menu#beverages
-
-  .menu#dessert
-
-    include includes/_dessert
-
-    include includes/_froyo
-
+  include includes/_partners

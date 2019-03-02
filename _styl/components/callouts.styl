@@ -6,7 +6,7 @@
   padding: 7%
   position: relative
 
-  &:not(section) 
+  &:not(section):not(:first-child)
     margin-top: 50px
 
   &:not(:last-child)
@@ -16,20 +16,14 @@
     margin-bottom: 0
 
   .illo
-      position: absolute
+    max-width: 100%
+    position: absolute
 
   &.img-top
     .illo
       left: 50%
       top: 0
       transform: translate(-55%,-50%)
-
-  &.img-left
-    padding-left: 150px !important
-    .illo
-      left: 0
-      top: 50%
-      transform: translateY(-50%)
 
   h4
     text-align: center
@@ -51,8 +45,7 @@
   &.callout-style-2
     margin-left: 11px
     margin-top: 11px
-    padding-right: 9%
-    padding-bottom: 9%
+    padding: 7% 8% 9% 5%
     border: $dashed
     box-shadow: inset -10px -10px 0 white,
                 inset -11px -11px 0 $green,

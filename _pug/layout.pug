@@ -20,7 +20,8 @@ html(lang='en')
 
     link(rel='stylesheet', href='https://use.typekit.net/snm1pqg.css')
 
-    link(rel='stylesheet', href='/assets/css/main.css')
+    link(rel='stylesheet', media='screen', href='/assets/css/main.css')
+    link(rel='stylesheet', media='print', href='/assets/css/print.css')
 
     block scripts
 
@@ -40,6 +41,8 @@ html(lang='en')
         p A modern eatery for this life and after.
         small &#9733; &#9733; &#9733;
 
-      block content
+    block content
 
-
+    footer.footer
+      p This site is not affiliated with The Good Place or NBC.
+      p Made with #[span.emoji 💚] by #[a(href='https://twitter.com/lynnandtonic') Lynn Fisher], an Arizona trashbag.

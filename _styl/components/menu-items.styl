@@ -4,26 +4,18 @@
 
 .menu-item
   display: grid
-  grid-template-columns: b(item) auto b(episode) 100px
+  grid-template-columns: b(item) auto b(episode) auto
+  grid-column-gap: 50px
   
   &:not(:last-child)
-    margin-bottom: 15px
-
-  .name,
-  .description
-    grid-column: item
-
-  .episode
-    grid-column: episode
-    align-self: start
-    justify-self: end
-
-  .name,
-  .episode
-    $font-brandon()
+    margin-bottom: 20px
 
   .name
+    margin-bottom: 6px
+    grid-column: item
     font-size: 1em
+    line-height: 1.2
+    $font-brandon()
 
     &.featured
       margin-bottom: 20px
@@ -32,13 +24,23 @@
     .emoji
       font-size: .8em
 
-  .description,
   .episode
+    grid-column: episode
+    align-self: start
+    justify-self: end
+    $font-brandon()
     font-size: .8em
 
-  .description > ul
-    margin: 15px
-    margin-left: 30px
+  .description
+    grid-column: item
+    font-size: .8em
+
+    & + .description
+      margin-top: 10px
+
+    & > ul
+      margin: 15px
+      margin-left: 30px
 
   &.center
     display: block
@@ -58,7 +60,7 @@
     display: block
     position: absolute
     left: -20px
-    top: 0
+    top: 1px
     font-style: normal
     font-size: 14px
 
@@ -72,3 +74,5 @@
     content: '🥔'
   &.corn:before
     content: '🌽'
+  &.zap:before
+    content: '⚡'

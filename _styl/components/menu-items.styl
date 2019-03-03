@@ -11,7 +11,7 @@
     margin-bottom: 20px
 
   .name
-    margin-bottom: 6px
+    margin-bottom: 5px
     grid-column: item
     font-size: 1em
     line-height: 1.2
@@ -35,23 +35,25 @@
     grid-column: item
     font-size: .8em
 
-    & + .description
-      margin-top: 10px
-
     & > ul
       margin: 15px
       margin-left: 30px
 
   &.center
-    display: block
+    display: flex
+    flex-direction: column
 
     .name,
     .description,
     .episode
       display: block
 
+    .description
+      margin-bottom: 15px
+
     .episode
-      margin-top: 15px
+      align-self: center
+      order: 3
 
 .icon
   position: relative

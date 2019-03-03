@@ -23,6 +23,14 @@ html(lang='en')
     link(rel='stylesheet', media='screen', href='/assets/css/main.css')
     link(rel='stylesheet', media='print', href='/assets/css/print.css')
 
+    meta(property='og:site_name', content='The Food Place')
+    meta(property='og:url', content='https://thefoodplace.cafe')
+    meta(property='og:description', content='The Food Place: a modern eatery for this life and after. All the food, drink, and restaurants you remember from the television show “The Good Place.”')
+    meta(property='og:image', content='https://thefoodplace.cafe/assets/images/social-the-food-place.png')
+    meta(property='og:type', content='website')
+
+    include includes/_ga.html
+
     block scripts
 
   body(class=bodyClass)
@@ -34,7 +42,7 @@ html(lang='en')
         a(href='#beverages') Beverages
         a(href='#dessert') Dessert
         a(href='#partners') Partners
-        a.recommend(href='') Recommend
+        a.recommend(href='https://ctt.ac/3Mdar') Recommend
 
       header.hero
         h1 The Food Place

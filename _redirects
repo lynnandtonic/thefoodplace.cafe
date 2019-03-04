@@ -1,2 +1,2 @@
 # Redirect default Netlify subdomain to primary domain
-http://hungry-pike-068c31.netlify.com/* http://thefoodplace.cafe/:splat 301!
+https://hungry-pike-068c31.netlify.com/* https://thefoodplace.cafe/:splat 301!

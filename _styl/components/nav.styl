@@ -4,7 +4,8 @@
 
 .nav-main
   $font-brandon()
-  position: relative
+  display: flex
+  gap: 20px
   text-transform: uppercase
   font-size: .8em
 
@@ -19,47 +20,14 @@
       border-color: white
       outline: none
 
-  a.recommend
-    position: relative
-
-    &:before
-      content: ''
-      display: block
-      position: absolute
-      top: 0
-      background: url('/assets/images/icon-twitter.svg') no-repeat 0 center
-      background-size: contain
-
   @media screen and (min-width: $bp-small + 1)
     padding-top: 20px
 
-    a:not(.recommend)
-      margin-right: 20px
-
-    a.recommend
-      float: right
-
-      &:before
-        width: 20px
-        height: @width
-        left: -25px
+    :last-child
+      margin-left: auto
 
   @media screen and (max-width: $bp-small)
+    justify-content: center
     padding-top: 40px
     background: linear-gradient(to bottom, $grey-drk 25px, transparent 25px)
     text-align: center
-
-    a
-      margin: 0 10px
-
-    a.recommend
-      position: absolute
-      top: 5px
-      right: 5px
-      font-size: .8em
-      
-      &:before
-        width: 12px
-        height: @width
-        top: 2px
-        left: -15px
